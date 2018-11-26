@@ -160,7 +160,6 @@ get_box_score <- function(..., progress = TRUE) {
                data_frame()})
   }
   
-  
   all_box_score_data <- pmap_dfr(..., try_get_box_score)
   
   driver$client$close()
